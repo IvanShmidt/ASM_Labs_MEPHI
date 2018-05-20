@@ -1,0 +1,4 @@
+# !/bin/bash
+nasm -f elf write_f.asm -dOS_LINUX
+ld -m elf_i386 write_f.o -o write_f
+./write_f

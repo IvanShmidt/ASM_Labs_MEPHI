@@ -1,0 +1,4 @@
+# !/bin/bash
+nasm -f elf stringsort.asm -dOS_LINUX
+ld -m elf_i386 stringsort.o -o stringsort
+./stringsort
